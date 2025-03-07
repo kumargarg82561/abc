@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.banner_ {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 0.5;
+    filter: opacity(0.5);
+}
+
+.navbar {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #ffff;
+    left: 0;
+    transition: 0.5s;
+    bottom: -10px;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.fa-regular {
+    font-size: 30px;
+    padding-left: 40px;
+    color: #ffff;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #ffff;   
+}
+
+.heading h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffff;
+}
+
+.content p {
+    font-size: 60px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.content button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #ffff;
+    background-color: transparent;
+    color: #ffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #0004e6;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;    
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+    border: none;
+}
+

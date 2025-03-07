@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SafeInsights</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/detailed_predictions.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="pop">
+        <ul>
+            <a href="/change_pass"> <li> Change Password</li> </a>
+            <div class = "bor"></div>
+            <a href="/logout"> <li> Logout</li> </a>
+        </ul>
+    </div>
+    <div class=whole>
+        <!-- BACKGROUND IMAGE -->
+        <img src="{{url_for('static', filename = 'assets/img/main_back.jpg')}}" alt="background" class="banner">
+        <img src="{{url_for('static', filename = 'assets/img/black_img.png')}}" alt="" class="banner_">
+        <div class="black">
+            <!-- NAVBAR -->
+            <div class="navbar">
+                <div class=heading>
+                    <img src="{{url_for('static', filename = 'assets/img/logo.png')}}" alt="logo" class="logo">
+                    <h3>SafeInsights</h3>
+                </div>
+                <ul>
+                    <li> <a href="home_page"> Home </a></li>
+                    <li> <a href="features_page"> Features </a></li>
+                    <li> <a href="predictions"> Prediction </a></li>
+                    <li> <a href="contact_page"> Contact </a></li>
+                    <i class="fa-regular fa-user" id = "user"></i>
+                </ul>
+            </div>
+            <div class="tot">
+                <div class="content">
+                    <p>{{ans|safe}}</p>
+                </div>
+                <div class="button__">
+                    <a href="/detailed_analysis"><button type="button"> Detailed Analysis </button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="con">
+            <h1>Diabetes prevention: 5 tips for taking control</h1>
+        </div>
+
+            <div class=context id = context>
+                <div>
+                    <h2>1. Lose extra weight</h2>
+                    <p>Losing weight reduces the risk of diabetes. People in one large study reduced their risk of developing diabetes by almost 60% after losing approximately 7% of their body weight with changes in exercise and diet.
+
+                        The American Diabetes Association recommends that people with prediabetes lose at least 7% to 10% of their body weight to prevent disease progression. More weight loss will translate into even greater benefits.
+                        
+                        Set a weight-loss goal based on your current body weight. Talk to your doctor about reasonable short-term goals and expectations, such as a losing 1 to 2 pounds a week.</p>
+                </div>
+
+                <div>
+                    <h2>2. Be more physically active</h2>
+                    <p>There are many benefits to regular physical activity. Exercise can help you:
+
+                        Lose weight
+                        Lower your blood sugar
+                        Boost your sensitivity to insulin — which helps keep your blood sugar within a normal range
+                        Goals for most adults to promote weight loss and maintain a healthy weight include:
+                        
+                        Aerobic exercise. Aim for 30 minutes or more of moderate to vigorous aerobic exercise — such as brisk walking, swimming, biking or running — on most days for a total of at least 150 minutes a week.
+                        Resistance exercise. Resistance exercise — at least 2 to 3 times a week — increases your strength, balance and ability to maintain an active life. Resistance training includes weightlifting, yoga and calisthenics.
+                        Limited inactivity. Breaking up long bouts of inactivity, such as sitting at the computer, can help control blood sugar levels. Take a few minutes to stand, walk around or do some light activity every 30 minutes.</p>
+                </div>
+                
+                <div>
+                    <h2>3. Eat healthy plant foods </h2>
+                    <p>Plants provide vitamins, minerals and carbohydrates in your diet. Carbohydrates include sugars and starches — the energy sources for your body — and fiber. Dietary fiber, also known as roughage or bulk, is the part of plant foods your body can't digest or absorb.
+
+Fiber-rich foods promote weight loss and lower the risk of diabetes.</p>
+                </div>
+
+                <div>
+                    <h2>4. Eat healthy fats</h2>
+                    <p>Fatty foods are high in calories and should be eaten in moderation. To help lose and manage weight, your diet should include a variety of foods with unsaturated fats, sometimes called "good fats."
+                    
+                    Saturated fats, the "bad fats," are found in dairy products and meats. These should be a small part of your diet. You can limit saturated fats by eating low-fat dairy products and lean chicken and pork.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>5. Skip fad diets and make healthier choices</h2>
+                    <p>Many fad diets — such as the glycemic index, paleo or keto diets — may help you lose weight. There is little research, however, about the long-term benefits of these diets or their benefit in preventing diabetes.
+
+                        Your dietary goal should be to lose weight and then maintain a healthier weight moving forward. Healthy dietary decisions, therefore, need to include a strategy that you can maintain as a lifelong habit. Making healthy decisions that reflect some of your own preferences for food and traditions may be beneficial for you over time</p>
+                </div>
+            </div>
+    </div>
+
+</body>
+<script src="{{url_for('static', filename = 'JS/profile.js')}}"></script>
+
+</html>

@@ -1,0 +1,15 @@
+{
+    "params" :
+    {
+        "local_server" : "True",
+        "local_URI" : "mysql://root@localhost/liver_db", 
+        "production_URI" : "",
+
+        "secret_key" : "",
+
+        "MAIL_SERVER" : "smtp.gmail.com",
+        "MAIL_PORT" : 465,
+        "MAIL_USERNAME" : "",
+        "MAIL_PASSWORD" : ""
+    }
+}

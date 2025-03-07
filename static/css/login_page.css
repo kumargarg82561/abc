@@ -1,0 +1,235 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/img/main_back.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 95vw;
+    background-position: top;
+    background-size: cover;
+    z-index: 0;
+    margin: 0px auto;
+}
+/* .bg-img
+{
+    background-image: url(images/main_back.jpg);
+    filter: blur(8px);
+} */
+
+/* h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 300px;
+    text-shadow: 0 0 50px black;
+} */
+
+
+h2 {
+    background-color: #b3b3b3;
+    font-size: 50px;
+    font-weight: bold;
+    font-display: initial;
+    
+    margin-top: -60px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right, rgb(24, 116, 254), rgb(207, 248, 26));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 20px 20px 50px rgba(255,165,0,1);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border: #000000;
+    border-radius: 10px;
+}
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+.form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: auto;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    backdrop-filter: blur(1000px);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.8), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 50px;
+  }
+
+#acc
+{
+    font-size: 17px; 
+    box-shadow: #f2f2f2;
+    padding: 0 15%;
+    /* padding-left: 100px; */
+    text-decoration: solid;
+    font-weight: 200;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 34px; 
+}
+
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    text-decoration: none;
+  }
+  
+.container {
+    position: center;
+    margin: 0 auto;
+    max-width: min-content;
+    /* background-image: linear-gradient(red,white); */
+    opacity: .94;
+    border: 10px;
+    /* padding: 5% 10% 10% 5%;  */
+    padding: 120px;
+    height: auto;
+    width: 40vw; ;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.24);
+    /* text-shadow: 0 0 500px rgb(162, 13, 13); */
+    backdrop-filter: blur(50px);
+    z-index: 1;
+  }
+
+#label {
+    color: #ffffff;
+    display: flex;
+    font-size: 15px;
+    font-display:initial;
+    align-items: center;
+    margin-left: 80px;
+    padding-bottom: 5px;
+} 
+
+@keyframes background-color-change {
+    0%{
+        background-color: #0004e6;
+    }
+    /* 50%{
+        background-color: #fff9f9;
+    } */
+    100%{
+        background-color: #0004e6;
+    }
+}
+
+@keyframes text-color-change {
+    0% {
+        color: white;
+    }
+    /* 50% {
+        color: rgb(152, 130, 130);
+    } */
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+#loginbutton {
+    position: 50px;
+    /* animation : background-color-change 1s infinite, text-color-change .5s infinite; */
+    border: #000000;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: #000000;  
+    margin-top: 20px;  
+    margin-left: 180px;
+    width: 6vw;
+    font-size: large;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#loginbutton:hover{
+    animation: background-color-change 1s infinite, text-color-change .5s infinite;
+    
+}
+
+#signupbutton {
+    position: 50px;
+    /* animation : background-color-change 1s infinite, text-color-change .5s infinite; */
+    border: #000000;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: #000000;  
+    margin-top: 0px;  
+    margin-left: 110px;
+    font-size: large;
+    width: 6vw;
+    font-size: large;
+}
+
+#signupbutton:hover{
+    animation: background-color-change 1s infinite, text-color-change .5s infinite;
+}
+
+#input
+{
+    height: 2vw;
+    width: 17vw;
+    margin-left: 80px;
+    border-radius: 9px;
+    border: none;
+}
+
+input::placeholder {
+    padding: 5px;
+}
+
+form {
+    margin-left: -70px;
+}
+
+.banner_ {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    z-index: 0.5;
+    filter: opacity(0.5);
+}
+
+.flash {
+    position: relative;
+    color: #ffffff;
+    font-size: 19.5px;
+    font-weight: 200;
+    align-items: center;
+    margin-bottom: 10px;
+    /* display: inline; */
+    /* text-align: justify; */
+}
+
+.mes {
+    padding: 7px;
+    width: 250px;
+    border : 2px solid #ffff;
+    border-radius: 20px;
+    margin-left: 20px;
+}

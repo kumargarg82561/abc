@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/signup.css')}}">
+</head>
+<body>
+    <img src="{{url_for('static', filename = 'assets/img/black_img.png')}}" alt="" class = "banner_">
+        <div class="container">
+        <h2><b>SafeInsights</b></h2>  
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class = "flash">
+                    {% for message in messages %}
+                        <h3 class = "mes">
+                            {{message}}
+                        </h3>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        
+        <form action="/signup_page" method="post">
+            <label for="username" id="label"><b>Username</b></label>
+            <input type="text" id = "input" placeholder="Username" name = "Username" required>
+            <br>
+            <br>
+            <label for="pwd" id="label"><b>Password</b></label>
+            <input type="password" id = "input" 
+            placeholder="Password" name = "Password" required>
+            <br>
+            <br>
+            <label for="phone" id="label"><b>Phone Number</b></label>
+            <input type="number" id = "input" placeholder="+91 xxxxxxxxx" name = "Phone_num" required>
+            <br>
+            <br>
+            <label for="email" id="label"><b>E-mail</b></label>
+            <input type="email" id = "input" placeholder="E-mail" name = "Mail_id" required>
+            <br>
+            <br>
+            <button type="submit" id ="signupbutton">Sign Up</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
